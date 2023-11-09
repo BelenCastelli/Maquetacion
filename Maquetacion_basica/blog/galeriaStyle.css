@@ -1,0 +1,30 @@
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+nav{
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:white
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+p{
+    height: 45vh;
+    width: 33.25vw;
+    margin:0
+}
+img{
+    height: 100%;
+    width: 100%;
+}

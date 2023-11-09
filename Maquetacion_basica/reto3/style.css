@@ -1,0 +1,129 @@
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    height: 95vh;
+    width: 48vw;
+    margin-left: 20px;
+    border: solid rgb(170, 169, 169) 3px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    
+ 
+}
+
+.cabecera{
+    height: 15%;
+    width: 100%;
+    border: solid rgb(0, 128, 21) 3px;
+    border-radius: 15px;
+    margin: 3px;
+    padding: 10px;
+   
+   
+   
+}
+
+nav{
+    height: 8%;
+    width: 100%;
+    border: solid rgb(180, 87, 180) 3px;
+    margin: 3px;
+    border-radius: 15px;
+    padding: 10px;
+
+  
+}
+
+article{
+    height: 55%;
+    width: 65%;
+    border: solid blue 3px;
+    border-radius: 15px;
+    margin: 3px;
+    padding: 5px;
+    display:flex;
+    flex-flow:  column wrap;
+    justify-content: space-between;
+    
+    
+}
+
+.headerArticle{
+    height: 10%;
+    width: 95%;
+    margin:3px;
+    border:solid green 3px;
+    border-radius: 15px;
+    padding: 10px;
+    align-self: flex-start;
+    margin-top: -95px;
+    
+}
+.section{
+    display: flex;
+    align-items: flex-end;
+    
+    flex-flow: wrap column;
+    justify-content: flex-end;
+
+    height: 60%;
+}
+section{
+    border: solid blueviolet 3px;
+    border-radius: 15px;
+    margin:3px;
+    height: 10%;
+    width: 95%;
+    padding: 10px;
+
+}
+
+.footerArticle {
+    height: 5%;
+    width: 95%;
+    margin: 3px;
+    padding: 10px;
+    border:solid yellow(63, 63, 5) 3px;
+    border-radius: 15px;
+ 
+    }
+
+.izquierda{
+    height: 55%;
+    width: 30%;
+    border: solid rgb(255, 136, 0) 3px;
+    border-radius: 15px;
+    margin: 3px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+aside{
+    border:solid aquamarine 3px;
+    border-radius: 15px;
+    padding: 10px;
+    height: 42%;
+    width: 100%;
+    
+}
+
+footer{
+height: 7%;
+width: 97%;
+margin: 3px;
+padding: 10px;
+border:solid yellow 3px;
+border-radius: 15px;
+}
+
+h4{
+    font-weight: bold;
+ 
+    align-self: flex-start;
+
+}
