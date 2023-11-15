@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    height: 150px;
+    background-color:  #556B2F
+}
+
+.encabezado{
+    height: 100%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Bangers;
+    font-size: 50pt;
+    color: #FFD700
+}
+
+#subtitulo{
+    margin-top: -40px;
+    color: #ffd900a1
+}
+
+main{
+    font-family: boogaloo;
+    background-color: rgba(85, 107, 47, 0.616);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.descripcion{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.descripcion-i{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.descripcion-p{
+    font-size: 30px;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+#ofertas{
+    display: flex;
+    width: 70%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.ofertas-tit{
+    font-size: 30pt;
+    color: #333333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ofertas-sub{
+    width: 80%;
+    font-size: 20pt;
+}
+.ofertas-e{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ofertas-content{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.ofertas-l{
+    width: 500px;
+    display: flex;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.ofertas-t{
+    color: #634825;
+    font-size: 22pt;
+    margin-top: 30px;
+}
+
+.img-ciudad{
+    border-radius: 50px;
+}
+
+.ofertas-i{
+    margin-top: 30px;
+}
+
+.ofertas-d{
+    margin-top: 30px;
+    font-size: 18pt;
+}
+
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.contacto-e{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    flex-direction: column;
+
+}
+
+.contacto-t{
+    font-size: 28pt;
+}
+
+.contacto-p{
+    font-size: 18pt;
+}
+
+.form{
+    width: 70%;
+    font-size: 20pt;
+}
+.form-x{
+    font-size: ;
+}
+:placeholder-shown{
+    background-color: rgba(85, 107, 47, 0.616);
+    height: 25px;
+}
+
+#personas{
+    background-color: rgba(85, 107, 47, 0.616);
+    height: 25px;
+    width: 50px;
+    font-size: 16pt;
+}
+
+#date{
+    background-color: rgba(85, 107, 47, 0.616);
+    height: 25px;
+ 
+    font-size: 16pt;
+}
+.botones{
+    margin-bottom: 50px;
+}
+.button{
+    height: 40px;
+    width: 180px;
+    background-color: rgba(85, 107, 47, 0.616);
+    font-size: 14pt;
+    border: none;
+}
+
+footer{
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: white;
+}
+
+
+.footer{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer aside {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+}
+
+.footer-list  {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+.footer-list-a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.685);
+    margin: 40px
+}
+
+.footer-p{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
