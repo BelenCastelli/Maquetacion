@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleContacto.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Desarrollo Web Full Stack</title>
+</head>
+<body>
+    <header>
+
+        <section>
+            <a href="index.html"><img src="Images/logo.png" alt="Logo Codenotch"></a>
+        </section>
+
+        <aside>
+            <nav>
+                <ul class="header-list">
+                    <a id="enlaceNav" href="desarrolloWeb.html"><li><strong>Desarrollo Web Full Stack</strong></li></a>
+                    <a id="enlaceNav"href="dataAnalytics.html"><li><strong>Data Analytics</strong></li></a>
+                    <a id="enlaceNav"href="equipoCodenotch.html"><li><strong>Equipo Codenotch</strong></li></a>
+                    <a id="enlaceNav"href="contactos.html"><li><strong>Contacto</strong></li></a>
+                    
+                </ul>
+            </nav>
+        </aside>
+
+    </header>
+    
+    <main>
+        <div class="content">
+            <div class="encabezado">
+                <div class="encabezado-titulo">
+                    <h1><strong>¿Dudas? Normal, habla con un experto.</strong></h1>  
+                </div>
+
+                <div class="encabezado-subtitulo">
+                    <p><strong>Déjanos tus datos y uno de nuestros asesores se pondrá en contacto contigo. Sin spam, sin compromiso.</strong></p>
+                </div>
+
+            </div>
+
+            
+            <aside class="aside-image">
+                <p>
+                    <img src="Images/figure5.png" alt="figura Codenotch" width="350px">
+                </p>
+            </aside>
+            
+            <section class="form">
+                <form>
+                    <div>
+                        <label for="nombre">Nombre*:</label>
+                        <input class="form-background" type="text" id="nombre" placeholder="Nombre*" required/>
+                    </div>
+                  
+
+                    <div>
+                        <label for="telefono">Telefono*:</label>
+                        <input class="form-background" type="tel" id="telefono" placeholder="Teléfono*" 
+                        required maxlength="9"/>
+                    </div>
+                  
+
+                    <div>
+                        <label for="email">Email*:</label>
+                        <input class="form-background"type="email" id="nombre" placeholder="Email*" 
+                        required/>
+                    </div>
+                   
+
+                    <div>¿Cómo nos conociste?*
+                        <select class="form-background" id="conocer">
+                            
+                            <option value="redesSociales">Redes Sociales</option>
+                            <option value="alguien">Alguien me habló de Codenotch</option>
+                            <option value="evento">Por un evento</option>
+                            <option value="otro">Otro motivo</option>
+                        </select>
+                    </div>
+                    
+
+                    <div>Bootcamp en el que estás interesad@*
+                        <select class="form-background"id="bootcamp">
+                            
+                            <option value="web">Desarrollo Web Full Stack</option>
+                            <option value="dataAnalytics">Data Analytics</option>
+                        </select>
+                    </div>
+                    
+
+                    <div>Modalidad*
+                        <select class="form-background" id="modalidad">
+                            
+                            <option value="fulltimeMadrid">Full Time | Madrid</option>
+                            <option value="fulltimeRemoto">Full Time | Remoto</option>
+                            <option value="partTime">Part Time | Remoto </option>
+                            <option value="otro">Otro motivo</option>
+                        </select>
+                    </div>
+                  
+
+                    <div class ="botones">
+                     
+                        <input id="submit" type="submit" value="Espero vuestra llamada">
+                    
+                        <input id="reset" type="reset" value="Limpiar Formulario">
+                    
+                    </div>
+                </form>
+        
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-codenotch">
+            <p>&copy Codenotch 2021-2023 | All rights reserved</p>
+        </div>
+        
+        <aside>
+                    
+            <ul class="footer-list">
+                <a class="footer-list-a" href="https://www.facebook.com/codenotchMAD/" target="_blank"><li>Facebook</li></a>
+                <a class="footer-list-a" href="https://twitter.com/i/flow/login?redirect_after_login=%2FCodenotchMAD" target="_blank"><li>Twitter</li></a>
+                <a class="footer-list-a" href="https://www.linkedin.com/school/codenotch/" target="_blank"><li>Linkedin</li></a>
+                <a class="footer-list-a" href="https://www.instagram.com/codenotchmad/?hl=es" target="_blank"><li>Instagram</li></a>
+            </ul>
+            
+
+
+            <p class="footer-p">
+                <a href="#top"> <img src="Images/flecha5.png" alt="flecha hacia arriba" width="50px"></a>
+            </p>
+            
+        </aside>
+    </footer>
+
+</body>
+
+
+</html>
