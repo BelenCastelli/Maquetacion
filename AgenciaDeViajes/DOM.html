@@ -164,45 +164,49 @@
                 <hr/>
             </div>
 
-            <div class="form">
+            <form class="form">
 
                 <div class="form-x">
-                    <label for="name"><b>Nombre:</b></label>
+                    <label for="nombre"><b>Nombre:</b></label>
                     <input type="text" id="nombre" placeholder="Nombre" required >
                 </div>
                 <br/>
 
                 <div class="form-x">
                     <label for="origen"><b>Origen:</b></label>
-                    <input type="text" id="origen" placeholder="Origen" required >
+                    <input class="input" type="text" id="origen" name="origen" placeholder="Origen" required >
                 </div>
                 <br/>
 
                 <div class="form-x">
                     <label for="destino"><b>Destino:</b></label>
-                    <input type="text" id="destino" placeholder="Destino" required >
+                    <input class="input" type="text" id="destino" name="destino" placeholder="Destino" required >
                 </div>
                 <br/>
 
                 <div class="form-x">
                     <label for="personas"><b>Número de personas:</b></label>
-                    <input type="number" id="personas" required >
+                    <input class="input" type="number" id="personas" name="personas" required min="1">
                 </div>
                 <br/>
 
                 <div class="form-x">
                     <label for="date"><b>Fecha:</b></label>
-                    <input type="date" id="date" required >
+                    <input class="input" type="date" id="date" name="date" required >
                 </div>
                 <br/>
 
-                <div class="botones">
-                     <input class="button" type="submit" value="Solicitar información">
-                     <input class="button" type="submit" value="filtrar">
+                <div class="botones" id="boton">
+                     <button class="button" type="button" onclick="getDatos()">Solcitar Información</button>
+                     <button class="button"  type="button" onclick="filtrarDatos()" >Filtrar</button>
                    
                 </div>
 
-            </div>
+                <div>
+                    <p id="imprimir"></p>
+                </div>
+
+            </form>
 
         </section>
 
