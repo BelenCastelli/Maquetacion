@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainText:'Josefin Sans', sans-serif;
+    --text:'Roboto Serif', serif;
+    --backgroundColor:  linear-gradient(to left,rgb(245, 203, 139), rgba(255, 235, 205, 0.857));
+    --colorHeader: rgb(9, 110, 9) ;
+}
+
+body{
+    height: 100vh;
+    max-width: 100vw;
+}
+
+header{
+    height: 150px;
+    width: 100%;
+    color: var(--colorHeader);
+    display: flex;
+    position: fixed;
+    z-index: 99;
+}
+
+header section {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to right, rgb(245, 203, 139), rgba(255, 235, 205, 0.857));;
+    align-items: center;
+    justify-content: flex-end;
+}
+h1{
+    width: 100%;
+    font-family: var(--mainText);
+    text-align: center;
+    font-size: 36pt;
+
+}
+
+.logo:hover{
+    transform: scale(3) translate(0%, 50%);
+    transition: 2s;
+}
+header aside {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to left,  rgb(245, 203, 139), rgba(255, 235, 205, 0.857));
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.nav-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 24pt;
+   
+}
+.nav-list-{
+    margin-right: 80px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit; 
+    cursor: pointer; 
+
+}
+a:hover{
+    color:rgb(165, 79, 42);
+    text-decoration: underline
+}
+
+a:active {
+    color: rgb(174, 127, 6);
+}
+
+.fondo{
+    position: relative;
+  }
+  
+  .fondo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(images/WEEB\ BEIVA\ \ 7587.jpg) center/cover; 
+    opacity: 0.3;
+    z-index: -99;
+    bottom: 0;
+  }
+
+main{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--text);
+    color: black;
+    margin-bottom: 0;
+}
+
+
+.content{
+    
+    margin-top: 200px;
+    padding: 30px;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;;
+}
+
+.encabezado{
+    height: 200px;
+}
+.titulo{
+    font-family: var(--mainText);
+    color: var(--colorHeader);
+    font-size: 48pt;
+}
+
+.titulo:hover{
+    transition: 2s;
+    color:rgb(165, 79, 42);
+}
+
+.subt{
+    font-size: 24pt;
+    text-align: center;
+}
+
+.formulario{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    height: 500px;
+    width: 60%;
+    font-size: 20pt;
+    color: var(--colorHeader);
+}
+
+input {
+    width: 50%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18pt;
+    color: var(--mainText);
+}
+
+textarea{
+    margin-top: 25px;
+    width: 80%;
+    height: 250px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18pt;
+    color: var(--mainText);
+}
+
+
+button{
+    height: 50px;
+    width: 250px;
+    background-color: rgb(245, 203, 139);
+    cursor: pointer;
+    padding: 10px ;
+    font-size: 18pt;
+}
+
+button:hover{
+    background-color: rgba(255, 235, 205, 0.857);
+    border:none;
+    color: var(--colorHeader);
+}
+
+#nombre, #email, #mensaje {
+    background-color: rgba(255, 235, 205, 0.857);
+}
+
+.redes{
+    margin-top: 20px;
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 150px;
+ 
+}
+.redes-p{
+    width: 100%;
+    height: 80px;
+
+    font-size: 20pt;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.redes-list{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo2{
+    position: relative;
+    left: 900px;
+    bottom: 750px;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    color: white;
+    font-size: 16pt;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+
+}
+
+.footer-p {
+    border: solid rgb(5, 2, 2) 2px;
+}
