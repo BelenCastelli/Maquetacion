@@ -112,15 +112,14 @@ main{
 .content{
     display: flex;
     margin-top: 180px;
-    width: 65%;
+    width: 70%;
     align-items: center;
-
     flex-wrap: wrap;
     flex-direction: column;
 }
 
 .descripcion{
-    font-size: 20pt;
+    font-size: 18pt;
     width: 80%;
 }
 
@@ -136,8 +135,10 @@ main{
 
 .p4{
     position: relative;
-    left: 350px;
-    font-size: 28pt;
+    left: 200px;
+    top:20px;
+    font-size: 24pt;
+    z-index: 99;
     
 }
 
@@ -169,7 +170,7 @@ main{
 #foto{
     border-radius: 50px;
     position: relative;
-    left: 50px;
+    left: 40px;
   
 }
 /* FOOTER */
