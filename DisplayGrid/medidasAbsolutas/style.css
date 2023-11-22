@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 300px 150px 300px;
+    grid-template-rows: 200px 200px;
+}
+
+.hijo_a{
+    background-color: greenyellow;
+}
+
+.hijo_b{
+    background-color: orange
+}
+
+.hijo_c{
+    background-color: orangered
+}
+
+.hijo_d{
+    background-color:red
+}
+
+.hijo_e{
+    background-color: blue
+}
+
+.hijo_f{
+    background-color: yellow
+}

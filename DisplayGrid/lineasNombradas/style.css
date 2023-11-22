@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: [x0] 2fr [x1] 1fr [x2] 1fr [x3];
+    grid-template-rows: [y0] 1fr [y1] 6fr [y2] 1fr [y3];
+}
+
+header{
+    grid-column: x0/x3;
+    grid-row: y0/y1;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32pt;
+}
+
+.principal{
+    grid-column: x0/x2;
+    grid-row: y1/y2;
+    background-color: blue;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: [x0] 2fr [x1] 1fr [x2];
+    grid-template-rows: [y0] 1fr [y1] 2fr [y2] ;
+}
+
+.contenido{
+    grid-column: x0/x2;
+    grid-row: y0/y1;
+    background-color:blue;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: solid white 1px;
+    color: white;
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+.texto1{
+    grid-column: x0/x1;
+    grid-row: y1/y2;
+    background-color:blue;
+    margin-right: 10px;
+    padding: 20px;
+    border: solid white 1px;
+    color: white;
+}
+
+.texto2{
+    grid-column: x1/x2;
+    grid-row: y1/y2;
+    background-color:blue;
+    padding: 20px;
+    border: solid white 1px;
+    color: white;
+}
+
+aside{
+    grid-column: x2/x3;
+    grid-row: y1/y2;
+    background-color:#19df96;
+    color: white;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4] 
+}
+
+.menu{
+    grid-column: x0/x1;
+    grid-row: y0/y1;
+    border: solid black 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32pt;
+}
+
+.menu1, .menu2, .menu3{
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.menu1{
+    grid-column: x0/x1;
+    grid-row: y1/y2;
+}
+
+.menu2{
+    grid-column: x0/x1;
+    grid-row: y2/y3;
+}
+
+.menu3{
+    grid-column: x0/x1;
+    grid-row: y3/y4;
+}
+
+
+footer{
+    grid-column: x0/x3;
+    grid-row: y2/y3;
+    background-color: blueviolet;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2];
+    grid-template-rows: [y0] 1fr [y1] 
+}
+
+.footer, .contacto{
+    border: solid black 2px;
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    grid-column: x0/x1;
+    grid-row: y0/y1;
+    margin-right: 10px;
+}
+
+.contacto{
+    grid-column: x1/x2;
+    grid-row: y0/y1;
+}
+
