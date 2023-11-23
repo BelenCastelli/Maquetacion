@@ -32,6 +32,7 @@ header{
     display: grid;
     grid-template-columns: [x0] 2fr [x1] 1fr [x2];
     grid-template-rows: [y0] 1fr [y1] 2fr [y2] ;
+    grid-column-gap: 10px;
 }
 
 .contenido{
@@ -50,7 +51,6 @@ header{
     grid-column: x0/x1;
     grid-row: y1/y2;
     background-color:blue;
-    margin-right: 10px;
     padding: 20px;
     border: solid white 1px;
     color: white;
@@ -74,7 +74,8 @@ aside{
 
     display: grid;
     grid-template-columns: [x0] 1fr [x1];
-    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4] 
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+    grid-row-gap: 15px;
 }
 
 .menu{
@@ -89,7 +90,6 @@ aside{
 
 .menu1, .menu2, .menu3{
     background-color: black;
-    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +119,8 @@ footer{
 
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 1fr [x2];
-    grid-template-rows: [y0] 1fr [y1] 
+    grid-template-rows: [y0] 1fr [y1];
+    grid-column-gap: 15px;;
 }
 
 .footer, .contacto{
@@ -135,11 +136,13 @@ footer{
 .footer{
     grid-column: x0/x1;
     grid-row: y0/y1;
-    margin-right: 10px;
 }
 
 .contacto{
     grid-column: x1/x2;
     grid-row: y0/y1;
+    
+    
+    
 }
 

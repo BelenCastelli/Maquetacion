@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+
+    display: grid;
+    grid-template-areas: "header header imagen"
+                        "aside content content"
+                        "footer footer footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: brown;
+    height:130px;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+   
+}
+
+.imagen{
+    grid-area: imagen;
+    background-color: rgb(75, 28, 28);
+    height:130px;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.aside{
+    grid-area: aside;
+    background-color: orange;
+    height: 665px;
+    padding: 15px;
+
+    display: flex;
+
+    display: grid;
+    grid-template-areas: "aside1"
+                        "aside2" ;
+}
+
+.aside1, .aside2{
+    background-color: white;
+    height: 200px;
+    font-size: 16pt;
+    font-weight: bold;
+    color: orange;
+    display: flex;
+    justify-content: center;
+}
+.aside1{
+    grid-area: aside1;
+    align-self: flex-start;
+}
+
+.aside2{
+    grid-area: aside2;
+    align-self: flex-end;
+}
+
+.content{
+    grid-area: content;
+    background-color: orangered;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+
+    display: grid;
+    grid-template-areas: "contenido"
+                            "texto";
+    
+    
+}
+.contenido, .texto{
+    border: solid white 2px;
+}
+.contenido{
+    grid-area: contenido;
+    height: calc(100% - 10px);
+}
+
+.texto{
+    grid-area: texto;
+    height: calc(100% - 10px);
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(75, 28, 28);
+    height:130px;
+    padding: 15px;
+    
+
+}
