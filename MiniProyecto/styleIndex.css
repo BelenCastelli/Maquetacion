@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color:black
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1];
+    grid-template-rows: [y0] 1fr [y1] 6fr [y2] 0.8fr [y3];
+}
+
+header{
+   
+    background-image: linear-gradient(to left top, #833e43, #8c3539, #932a2d, #991e1f, #9d0e0e);
+    color: white;
+    font-family: 'Lobster', sans-serif;
+
+    grid-column: x0/x1;
+    grid-row: y0/y1;
+
+}
+nav{
+    height: 800px;
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2]
+}
+
+
+#logo{
+    height: 600px;
+    grid-column: x0/x2;
+    grid-row: y0/y1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#secciones{
+    height: 200px;
+    grid-column: x0/x2;
+    grid-row: y1/y2;
+    list-style: none;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+#lista{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40pt;
+}
+main{
+    
+    grid-column: x0/x1;
+    grid-row: y1/y2;
+    background-image: linear-gradient(to right bottom, #833e43, #8c3539, #932a2d, #991e1f, #9d0e0e);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2];
+    grid-template-rows: [y0] 1fr [y1];
+    grid-column-gap: 20px;
+}
+
+#slogan{
+    grid-column: x0/x1;
+    grid-row: y0/y1;
+    display: flex;
+    align-items: center;
+    font-size: 38pt;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+#img{
+    grid-column: x1/x2;
+    grid-row: y0/y1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#alex:hover{
+    transform: scale(1.5);
+    transition: 2s;
+
+}
+
+#frase{
+    margin-top: 50px;
+    font-size: 28pt;
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+footer{
+    grid-column: x0/x1;
+    grid-row: y2/y3;
+    background-color: black;
+    height: 100px;
+}
