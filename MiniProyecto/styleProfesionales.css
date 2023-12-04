@@ -86,7 +86,7 @@ main{
     flex-wrap: wrap;
 }
 
-#actors-content, #directors-content, #writers-content{
+.contendor{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
