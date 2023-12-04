@@ -72,12 +72,26 @@ main{
     grid-column: x0/x1;
     grid-row: y1/y2;
     background-image: linear-gradient(to right bottom, #833e43, #8c3539, #932a2d, #991e1f, #9d0e0e);
+    font-family: 'Lobster', sans-serif;
+    padding: 50px;
+}
+
+#actors, #directors, #writers {
+    background-image: linear-gradient(to right bottom, #833e43, #8c3539, #932a2d, #991e1f, #9d0e0e);
     padding: 50px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#actors-content, #directors-content, #writers-content{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 
 
 
@@ -98,11 +112,11 @@ main{
     transition: 2s;
 }
 
-h1{
+h2{
     font-size: 28pt;
     margin-bottom: 10px;
 }
-h1:hover, .contenido:hover{
+h2:hover, .contenido:hover{
     color:white;
 }
 
@@ -112,9 +126,24 @@ h1:hover, .contenido:hover{
     font-size: 14pt;
     text-align: center;
 }
+
+.display{
+    display: none;
+}
 footer{
     grid-column: x0/x1;
     grid-row: y2/y3;
     background-color: black;
-    height: 100px;
+    height: 80px;
+    color:white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+@media screen and (max-width:875px ) 
+{
+   #logo-img{
+    width: 450px;
+   }
 }

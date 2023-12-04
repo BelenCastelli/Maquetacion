@@ -116,5 +116,16 @@ footer{
     grid-column: x0/x1;
     grid-row: y2/y3;
     background-color: black;
-    height: 100px;
+    height: 80px;
+    color:white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+@media screen and (max-width:1200px ) 
+{
+   #logo-img{
+    width: 1000px;
+   }
 }

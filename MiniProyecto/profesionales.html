@@ -14,13 +14,13 @@
     <header>
         <nav>
             <div id="logo">
-                <a href="index.html"><img src="img//logo_cinepng.png " width="700px"></a>
+                <a href="index.html"><img src="img//logo_cinepng.png " width="700px" id="logo-img"></a>
 
             </div>
             <div id="secciones">
                 <ul id="lista">
                     <li><a href="peliculas.html" >Peliculas</a></li>
-                    <li><a href="#" onclick="anadirProfesionales()" >Profesionales</a></li>
+                    <li><a href="#">Profesionales</a></li>
                 </ul>
             </div>
         </nav>
@@ -28,11 +28,23 @@
 
 
     <main id="main">
+        <section id="actors" onclick="anadirActores()">
+            <h2>Actores</h2>
+            <div id="actors-content"></div>
+        </section>
+        <section id="directors" onclick="anadirDirectores()">
+            <h2>Directores</h2>
+            <div id="directors-content"></div>
+        </section>
+        <section id="writers" onclick="anadirGuionistas()">
+            <h2>Guionistas</h2>
+            <div id="writers-content"></div>
+        </section>
 
     </main>
 
     <footer>
-
+        <p>&copy; 2023 CineCultura. Todos los derechos reservados.</p>
     </footer>
 
 

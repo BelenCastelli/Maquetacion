@@ -14,7 +14,7 @@
     <header>
         <nav>
             <div id="logo">
-                <a href="index.html"><img src="img//logo_cinepng.png " width="700px"></a>
+                <a href="index.html"><img src="img//logo_cinepng.png " width="700px" id="logo-img"></a>
 
             </div>
             <div id="secciones">
@@ -33,16 +33,48 @@
         </section>
 
         <section id="formulario">
-            <form action="">
-                <label for="">sds</label>
-                <input type="text" name="" id="">
+            <form>
+                <fieldset id="datos">
+                    <legend id="form-titulo">Añade tu película de culto </legend>
+
+                    <label for="titulo">Titulo de la pelicula:</label>
+                    <input type="text" name="titulo" id="titulo" required placeholder="">
+
+                    <label for="estreno">Fecha de estreno:</label>
+                    <input type="text" name="estreno" id="estreno" required placeholder="">
+
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <input type="text" name="nacionalidad" id="nacionalidad" required placeholder=""> 
+
+                    <label for="genero">Género:</label>
+                    <input type="text" name="genero" id="genero" required placeholder="">
+
+                    <label for="actores">Actores Principales:</label>
+                    <input type="text" id="actores" name="actores" placeholder="">
+
+                    <label for="director">Director:</label>
+                    <input type="text" id="director" name="director" required placeholder="">
+
+                    <label for="guionista">Guionista:</label>
+                    <input type="text" id="guionista" name="guionista" required placeholder="">
+                    <div id="file">
+                        <label for="imagen" id="imagen2"> Selecciona aquí la portada de la película</label>
+                        <br/>
+                        <input type="file" name="imagen" id="imagen" required>
+                    </div>
+                    
+    
+                    <button type="button" id="boton" onclick="anadirPelicula()">Enviar</button>
+
+                </fieldset>
+   
             </form>
         </section>
 
-    </main>#
+    </main>
 
     <footer>
-
+        <p>&copy; 2023 CineCultura. Todos los derechos reservados.</p>
     </footer>
 
 

@@ -52,7 +52,7 @@ let photo3Req = "img/ellen.jpg"
 let actor3Req = new Professional ("Ellen Burstyn", 90, 65, 168, true, "estadunidense", 1, "actor", photo3Req)
 let photodireTrains = "img/boyle.jpg"
 let direcTrains= new Professional ("Danny Boyle", 67, 80, 184, false, "británico", 1, "director", photodireTrains);
-let photowritTrains = "img/irvin.jpg"
+let photowritTrains = "img/irvin.png"
 let writTrains = new Professional ("Irvin Welsh", 65, 80, 182, false, "britanica", 0, "guionista",photowritTrains);
 let photodireclub = "img/david.jpg"
 let direcCub = new Professional ("David Fincher", 61, 80, 184, false, "estadunidense", 0, "director",photodireclub)
@@ -66,68 +66,73 @@ let photowritReq = "img/selby.jpg"
 let writReq = new Professional ("Hubert Selby Jr", 76, 75, 180, true, "estadunidense", 0, "guionista",photowritReq)
 
 
-let profesionales = [actor1Trains,actor2Trains,actor3Trains,actor4Trains, actor1Club,actor2Club,actor3Club, 
-    actor1Nar,actor2Nar,actor3Nar, actor4Nar, actor1Req, actor2Req,actor3Req, direNar, direcCub, direcTrains, direcReq, 
-writClub, writTrains, writReq] 
+let actors = [actor1Trains,actor2Trains,actor3Trains,actor4Trains, actor1Club,actor2Club,actor3Club, 
+    actor1Nar,actor2Nar,actor3Nar, actor4Nar, actor1Req, actor2Req,actor3Req] 
 
+let directors = [direNar, direcCub, direcTrains, direcReq]
+let writers = [writClub, writTrains, writReq]
 
+let anadido = false
+function anadirActores() {
+    let actores = document.getElementById("actors-content");
 
-function anadirProfesionales() {
+    if (anadido == false) {
+        
+        for (let actor of actors) {
+       
 
-        let contenedor = document.getElementById("main");
-        for (let profesional of profesionales) {
             // crear card
             let card = document.createElement("div");
             // añadir clase
             card.classList.add("card");
-
+ 
             // Nombre
-            let nombre = document.createElement("h1");
-            let nombreContent = document.createTextNode(profesional.name);
+            let nombre = document.createElement("h2");
+            let nombreContent = document.createTextNode(actor.name);
             nombre.appendChild(nombreContent);
 
             // imagen
             let img = document.createElement("img");
-            img.src = profesional.photo;  
-            img.width = 350;
+            img.src = actor.photo;  
+            img.width = 300;
             img.classList.add("imgCss")
 
             // Edad
             let edad = document.createElement("p");
-            let edadContent = document.createTextNode(`Edad: ${profesional.age}`);
+            let edadContent = document.createTextNode(`Edad: ${actor.age}`);
             edad.appendChild(edadContent);
             edad.classList.add("contenido")
 
             // Nacionalidad
             let nacionalidad = document.createElement("p");
-            let nacionalidadContent = document.createTextNode(`Nacionalidad: ${profesional.nationality}`);
+            let nacionalidadContent = document.createTextNode(`Nacionalidad: ${actor.nationality}`);
             nacionalidad.appendChild(nacionalidadContent);
             nacionalidad.classList.add("contenido")
 
             // Profesion 
             let profesion = document.createElement("p");
-            let profesionContent = document.createTextNode(`Profesión: ${profesional.profession}`);
+            let profesionContent = document.createTextNode(`Profesión: ${actor.profession}`);
             profesion.appendChild(profesionContent);
             profesion.classList.add("contenido")
 
             // Número de Oscars
 
             let oscars = document.createElement("p");
-            let oscarsContent = document.createTextNode(`Número de Oscars: ${profesional.oscarNumber}`);
+            let oscarsContent = document.createTextNode(`Número de Oscars: ${actor.oscarNumber}`);
             oscars.appendChild(oscarsContent);
             oscars.classList.add("contenido")
+
             // Peso
             let peso = document.createElement("p");
-            let pesoContent = document.createTextNode(`Peso: ${profesional.weight} Kg`);
+            let pesoContent = document.createTextNode(`Peso: ${actor.weight} Kg`);
             peso.appendChild(pesoContent);
             peso.classList.add("contenido")
 
             // Altura
             let altura = document.createElement("p");
-            let alturaContent = document.createTextNode(`Altura: ${profesional.height}`);
+            let alturaContent = document.createTextNode(`Altura: ${actor.height}`);
             altura.appendChild(alturaContent);
             altura.classList.add("contenido")
-
 
         card.appendChild(nombre)
         card.appendChild(img);
@@ -141,10 +146,189 @@ function anadirProfesionales() {
         card.style.fontWeight = "bold"
         card.style.fontFamily='Cinzel';
         
-
-    
-        contenedor.appendChild(card);
+        actores.appendChild(card);
         }
+
+        anadido = true;
+
+    } else {
+        let cards =  document.getElementsByClassName("card")
+        for (let i = 0; i < cards.length; i++) {
+            cards[i].classList.add("display");
+        }
+        anadido = false
+
     }
+}
 
+let anadido2 = false  
+function anadirDirectores(){
+    let directores = document.getElementById("directors-content");
+  
+        
+        if (anadido2 == false) {
+    
+            for (let director of directors) {
 
+                let card = document.createElement("div");
+                card.classList.add("card");
+
+                // Nombre
+                let nombre = document.createElement("h2");
+                let nombreContent = document.createTextNode(director.name);
+                nombre.appendChild(nombreContent);
+
+                // imagen
+                let img = document.createElement("img");
+                img.src = director.photo;  
+                img.width = 300;
+                img.classList.add("imgCss")
+
+                // Edad
+                let edad = document.createElement("p");
+                let edadContent = document.createTextNode(`Edad: ${director.age}`);
+                edad.appendChild(edadContent);
+                edad.classList.add("contenido")
+
+                // Nacionalidad
+                let nacionalidad = document.createElement("p");
+                let nacionalidadContent = document.createTextNode(`Nacionalidad: ${director.nationality}`);
+                nacionalidad.appendChild(nacionalidadContent);
+                nacionalidad.classList.add("contenido")
+
+                // Profesion 
+                let profesion = document.createElement("p");
+                let profesionContent = document.createTextNode(`Profesión: ${director.profession}`);
+                profesion.appendChild(profesionContent);
+                profesion.classList.add("contenido")
+
+                // Número de Oscars
+
+                let oscars = document.createElement("p");
+                let oscarsContent = document.createTextNode(`Número de Oscars: ${director.oscarNumber}`);
+                oscars.appendChild(oscarsContent);
+                oscars.classList.add("contenido")
+                // Peso
+                let peso = document.createElement("p");
+                let pesoContent = document.createTextNode(`Peso: ${director.weight} Kg`);
+                peso.appendChild(pesoContent);
+                peso.classList.add("contenido")
+
+                // Altura
+                let altura = document.createElement("p");
+                let alturaContent = document.createTextNode(`Altura: ${director.height}`);
+                altura.appendChild(alturaContent);
+                altura.classList.add("contenido")
+
+                card.appendChild(nombre)
+                card.appendChild(img);
+                card.appendChild(edad)
+                card.appendChild(nacionalidad)
+                card.appendChild(profesion)
+                card.appendChild(oscars)
+                card.appendChild(peso)
+                card.appendChild(altura)
+
+                card.style.fontWeight = "bold"
+                card.style.fontFamily='Cinzel';
+
+                directores.appendChild(card);
+            }
+            anadido2 = true;
+
+        } else {
+            let cards =  document.getElementsByClassName("card")
+
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].classList.add("display");
+            }
+      
+            anadido2 = false
+            
+        }
+}
+
+let anadido3 = false  
+function anadirGuionistas(){
+    let guionistas = document.getElementById("writers-content");
+        
+        if (anadido3 == false) {
+    
+            for (let writer of writers) {
+
+                let card = document.createElement("div");
+                card.classList.add("card");
+
+                // Nombre
+                let nombre = document.createElement("h2");
+                let nombreContent = document.createTextNode(writer.name);
+                nombre.appendChild(nombreContent);
+
+                // imagen
+                let img = document.createElement("img");
+                img.src = writer.photo;  
+                img.width = 300;
+                img.classList.add("imgCss")
+
+                // Edad
+                let edad = document.createElement("p");
+                let edadContent = document.createTextNode(`Edad: ${writer.age}`);
+                edad.appendChild(edadContent);
+                edad.classList.add("contenido")
+
+                // Nacionalidad
+                let nacionalidad = document.createElement("p");
+                let nacionalidadContent = document.createTextNode(`Nacionalidad: ${writer.nationality}`);
+                nacionalidad.appendChild(nacionalidadContent);
+                nacionalidad.classList.add("contenido")
+
+                // Profesion 
+                let profesion = document.createElement("p");
+                let profesionContent = document.createTextNode(`Profesión: ${writer.profession}`);
+                profesion.appendChild(profesionContent);
+                profesion.classList.add("contenido")
+
+                // Número de Oscars
+
+                let oscars = document.createElement("p");
+                let oscarsContent = document.createTextNode(`Número de Oscars: ${writer.oscarNumber}`);
+                oscars.appendChild(oscarsContent);
+                oscars.classList.add("contenido")
+                // Peso
+                let peso = document.createElement("p");
+                let pesoContent = document.createTextNode(`Peso: ${writer.weight} Kg`);
+                peso.appendChild(pesoContent);
+                peso.classList.add("contenido")
+
+                // Altura
+                let altura = document.createElement("p");
+                let alturaContent = document.createTextNode(`Altura: ${writer.height}`);
+                altura.appendChild(alturaContent);
+                altura.classList.add("contenido")
+
+                card.appendChild(nombre)
+                card.appendChild(img);
+                card.appendChild(edad)
+                card.appendChild(nacionalidad)
+                card.appendChild(profesion)
+                card.appendChild(oscars)
+                card.appendChild(peso)
+                card.appendChild(altura)
+
+                card.style.fontWeight = "bold"
+                card.style.fontFamily='Cinzel';
+
+                guionistas.appendChild(card);
+            }
+            anadido3 = true;
+
+        }else {
+
+            let cards =  document.getElementsByClassName("card")
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].classList.add("display");
+            }
+        
+            anadido3 = false
+        }
+}

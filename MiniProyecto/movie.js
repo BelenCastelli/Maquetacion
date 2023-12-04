@@ -125,6 +125,7 @@ function nombreActores(movie){
     return nombre
 }
 
+
 function anadirDatos() {
     if (!anadido) {
         anadido = true;
@@ -135,7 +136,7 @@ function anadirDatos() {
             // añadir clase
             card.classList.add("card");
             // Titulo
-            let titulo = document.createElement("h1");
+            let titulo = document.createElement("h2");
             let tituloContent = document.createTextNode(movie.title);
             titulo.appendChild(tituloContent);
             // imagen
@@ -162,7 +163,7 @@ function anadirDatos() {
 
             // Actores
             let actores = document.createElement("p")
-            let actoresContent = document.createTextNode(`actores: ${nombreActores(movie)}`)
+            let actoresContent = document.createTextNode(`actores principales: ${nombreActores(movie)}`)
             actores.classList.add("contenido")
             actores.appendChild(actoresContent)
 
@@ -200,4 +201,86 @@ function anadirDatos() {
 }
 
 
+function anadirPelicula(){
 
+    let datos = {
+        titulo: document.getElementById("titulo").value,
+        estreno: document.getElementById("estreno").value,
+        nacionalidad: document.getElementById("nacionalidad").value,
+        genero: document.getElementById("genero").value, 
+        actores: document.getElementById("actores").value,
+        director: document.getElementById("director").value,
+        guionista: document.getElementById("guionista").value,
+        portada: document.getElementById("imagen").files[0]
+
+    }
+  
+    let contenedor = document.getElementById("peliculas");
+
+    let card = document.createElement("div");
+    // añadir clase
+    card.classList.add("card");
+     // Titulo
+     let titulo = document.createElement("h2");
+     let tituloContent = document.createTextNode(datos.titulo);
+     titulo.appendChild(tituloContent);
+     // imagen
+     let img = document.createElement("img");
+     let urlImagen = URL.createObjectURL(new Blob([datos.portada], { type: datos.portada.type }));
+     img.src = urlImagen 
+     img.width = 350;
+     img.classList.add("imgCss")
+     // Fecha de estreno
+     let estreno = document.createElement("p")
+     let estrenoContent = document.createTextNode(`Fecha de estreno: ${datos.estreno}`)
+     estreno.appendChild(estrenoContent)
+     estreno.classList.add("contenido")
+     // Nacionalidad
+     let nacionalidad = document.createElement("p")
+     let nacionalidadContent = document.createTextNode(`Nacionalidad: ${datos.nacionalidad}`)
+     nacionalidad.appendChild(nacionalidadContent)
+     nacionalidad.classList.add("contenido")
+     // Genero
+     let genero = document.createElement("p")
+     let generoContent = document.createTextNode(`Género: ${datos.genero}`)
+     genero.classList.add("contenido")
+     genero.appendChild(generoContent)
+
+    // Actores
+    let actores = document.createElement("p")
+    let actoresContent = document.createTextNode(`actores principales: ${datos.actores}`)
+    actores.classList.add("contenido")
+    actores.appendChild(actoresContent)
+
+    // Director
+    let director = document.createElement("p")
+    let directorContent = document.createTextNode(`Director: ${datos.director}`)
+    director.classList.add("contenido")
+    director.appendChild(directorContent)
+
+    // Guionista
+    let guionista = document.createElement("p")
+    let guionistaContent = document.createTextNode(`Guionista: ${datos.guionista}`)
+    guionista.classList.add("contenido")
+    guionista.appendChild(guionistaContent)
+
+     
+
+     card.appendChild(titulo)
+     card.appendChild(img);
+     card.appendChild(estreno)
+     card.appendChild(nacionalidad)
+     card.appendChild(genero)
+     card.appendChild(actores)
+     card.appendChild(director)
+     card.appendChild(guionista)
+   
+     card.style.fontWeight = "bold"
+     card.style.fontFamily='Cinzel';
+     
+
+ 
+     contenedor.appendChild(card);
+    
+
+}
