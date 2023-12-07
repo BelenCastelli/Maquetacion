@@ -19,127 +19,106 @@ let mono = new Prendas("mono", 24)
  let carrito = 0
 
  let cantidad = 1
+ let cantidad2 = 1
+ let cantidad3 = 1
+ let cantidad4 = 1
+ let cantidad5 = 1
+ let cantidad6 = 1
+ let cantidad7 = 1
+ let cantidad8 = 1
 
 jQuery(() =>{
     $("#carrito").on("click", function () {
         $("#modal").modal("show");
     });
 
+  
+
     // Añadir funcion para sumar 
 
     $("#pantalon1").on("click", function(){
-        $("#añadido").append(`
+        $("#añadido1").html(`
         <p><strong>Nombre:</strong> ${pantalon1.nombre}
-        <strong> Cantidad: </strong> ${cantidad} <strong>Precio:</strong> ${pantalon1.precio}€</p>
-        <p></p>
-        `);
+        <strong>Precio:</strong> ${pantalon1.precio*cantidad}€;
+        <strong> Cantidad: </strong> ${cantidad++} </p>`)
+        
 
         carrito += pantalon1.precio
         $("#precioTotal").html(`<p> Precio total: ${carrito}`)
-
-        $("#modal").modal("show");
-
     }) 
 
     $("#pantalon2").on("click", function(){
-        $("#añadido").append(`
-        <p><strong>Nombre:</strong> ${pantalon2.nombre} 
-        <strong>Precio:</strong> ${pantalon2.precio}€</p>
-        <p></p>
-        `);
+      
+        $("#añadido2").html(`
+        <p><strong>Nombre:</strong> ${pantalon2.nombre}
+        <strong>Precio:</strong> ${pantalon2.precio*cantidad2}€;
+        <strong> Cantidad: </strong> ${cantidad2++} </p>`)
 
         carrito += pantalon2.precio
 
         $("#precioTotal").html(`<p> Precio total: ${carrito}`)
 
-        $("#modal").modal("show");
-
     }) 
 
     $("#falda1").on("click", function(){
-        $("#añadido").append(`
-        <p><strong>Nombre:</strong> ${falda1.nombre} 
-        <strong>Precio:</strong> ${falda1.precio}€</p>
-        <p></p>
-        `);
-
+        $("#añadido3").html(`
+        <p><strong>Nombre:</strong> ${falda1.nombre}
+        <strong>Precio:</strong> ${falda1.precio*cantidad3}€;
+        <strong> Cantidad: </strong> ${cantidad3++} </p>`)
         carrito += falda1.precio
 
         $("#precioTotal").html(`<p> Precio total: ${carrito}`)
-
-        $("#modal").modal("show");
-
     }) 
 
     $("#falda2").on("click", function(){
-        $("#añadido").append(`
-        <p><strong>Nombre:</strong> ${falda2.nombre} 
-        <strong>Precio:</strong> ${falda2.precio}€</p>
-        <p></p>
-        `);
+        $("#añadido4").html(`
+        <p><strong>Nombre:</strong> ${falda2.nombre}
+        <strong>Precio:</strong> ${falda2.precio*cantidad4}€;
+        <strong> Cantidad: </strong> ${cantidad4++} </p>`)
 
         carrito += falda2.precio
 
         $("#precioTotal").html(`<p> Precio total: ${carrito}`)
-
-        $("#modal").modal("show");
-
     }) 
 
     $("#vestido1").on("click", function(){
-        $("#añadido").append(`
-        <p><strong>Nombre:</strong> ${vestido1.nombre} 
-        <strong>Precio:</strong> ${vestido1.precio}€</p>
-        <p></p>
-        `);
-        carrito += vestido1.precio
+        $("#añadido5").html(`
+        <p><strong>Nombre:</strong> ${vestido1.nombre}
+        <strong>Precio:</strong> ${vestido1.precio*cantidad5}€;
+        <strong> Cantidad: </strong> ${cantidad5++} </p>`)
 
         $("#precioTotal").html(`<p> Precio total: ${carrito}`)
-
-        $("#modal").modal("show");
 
     }) 
 
     $("#vestido2").on("click", function(){
-        $("#añadido").append(`
-        <p><strong>Nombre:</strong> ${vestido2.nombre} 
-        <strong>Precio:</strong> ${vestido2.precio}€</p>
-        <p></p>
-        `);
+        $("#añadido6").html(`
+        <p><strong>Nombre:</strong> ${vestido2.nombre}
+        <strong>Precio:</strong> ${vestido2.precio*cantidad6}€;
+        <strong> Cantidad: </strong> ${cantidad6++} </p>`)
         carrito += vestido2.precio
 
         $("#precioTotal").html(`<p> Precio total: ${carrito}`)
-
-        $("#modal").modal("show");
-
     }) 
 
     $("#cardigan").on("click", function(){
-        $("#añadido").append(`
-        <p><strong>Nombre:</strong> ${cardigan.nombre} 
-        <strong>Precio:</strong> ${cardigan.precio}€</p>
-        <p></p>
-        `);
+        $("#añadido7").html(`
+        <p><strong>Nombre:</strong> ${cardigan.nombre}
+        <strong>Precio:</strong> ${cardigan.precio*cantidad7}€;
+        <strong> Cantidad: </strong> ${cantidad7++} </p>`)
         carrito += cardigan.precio
 
         $("#precioTotal").html(`<p> Precio total: ${carrito}`)
-
-        $("#modal").modal("show");
-
     }) 
 
     $("#mono").on("click", function(){
-        $("#añadido").append(`
-        <p><strong>Nombre:</strong> ${mono.nombre} 
-        <strong>Precio:</strong> ${mono.precio}€</p>
-        <p></p>
-        `);
+        $("#añadido8").html(`
+        <p><strong>Nombre:</strong> ${mono.nombre}
+        <strong>Precio:</strong> ${mono.precio*cantidad8}€;
+        <strong> Cantidad: </strong> ${cantidad8++} </p>`)
         carrito += mono.precio
 
         $("#precioTotal").html(`<p> Precio total: ${carrito}`)
-
-        $("#modal").modal("show");
-
     }) 
 
 })
