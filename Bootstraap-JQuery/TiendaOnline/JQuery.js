@@ -87,6 +87,7 @@ jQuery(() =>{
         <strong>Precio:</strong> ${vestido1.precio*cantidad5}€;
         <strong> Cantidad: </strong> ${cantidad5++} </p>`)
 
+        carrito += vestido1.precio
         $("#precioTotal").html(`<p> Precio total: ${carrito}`)
 
     }) 
@@ -121,6 +122,29 @@ jQuery(() =>{
         $("#precioTotal").html(`<p> Precio total: ${carrito}`)
     }) 
 
+    $("#vaciarCarrito").on("click", function () {
+        cantidad = 1;
+        cantidad2 = 1;
+        cantidad3 = 1;
+        cantidad4 = 1;
+        cantidad5 = 1;
+        cantidad6 = 1;
+        cantidad7 = 1;
+        cantidad8 = 1;
+        carrito = 0;
+    
+        $("#añadido1").html('');
+        $("#añadido2").html('');
+        $("#añadido3").html('');
+        $("#añadido4").html('');
+        $("#añadido5").html('');
+        $("#añadido6").html('');
+        $("#añadido7").html('');
+        $("#añadido8").html('');
+    
+
+        $("#precioTotal").html(`Precio total: ${carrito}€`);
+    })
 })
     
 
